@@ -1,30 +1,27 @@
-let time = +prompt("Ingrese un horario en formato 24hs");
-let output = "";
-let timeSelected = [];
+let reserve = document.getElementById("btn");
 
-class Ticket {
-  constructor(time){
-    this.time = time;
-  }
 
-  findTime(){
-    if (time == 10 || time == 12 || time == 14 || time == 20)
-    return (output = "Felicidades! Ya tiene su ticket");
-    else return (output = "No hay tickets disponibles en ese horario");
-  }
-
-  addArray(){
-    timeSelected.push(time)
-  }
-
-  printAnswer() {
-    alert(this.findTime());
-  }
+function getTime(){
+  const schedule = document.querySelectorAll(".hour")
+  
+  schedule.forEach((hour) => {
+    if(hour.checked === true){
+      console.log(hour.id)
+    }else {
+      hour.disabled = true; 
+    }
+  })
 }
 
-let turn = new Ticket(time);
-turn.findTime();
-turn.printAnswer();
-turn.addArray();
+reserve.addEventListener("click", () => {
+  let spinner = document.getElementById("spinner");
+  spinner.classList.add("spinner-border", "text-primary")
+  getTime();
+  setTimeout(() => {
+    console.log("EXCELENTE, YA TIENE SU TICKET")
+    spinner.classList.remove("spinner-border", "text-primary")
+  }, 3000)
+});
 
-console.log(timeSelected)
+
+
