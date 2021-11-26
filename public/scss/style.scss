@@ -1,3 +1,5 @@
+@import "_alert";
+
 body {
   margin: 0;
   padding: 0;
@@ -21,16 +23,23 @@ body {
       margin: 0 0 10px 0;
       padding: 0 0 10px 0;
     }
-    .turn {
-      padding: 10px;
-      width: 300px;
-      p {
-        margin-left: 10px;
-        display: inline;
+    ul {
+      padding: 0 10px;
+      .turn {
+        list-style-type: none;
+        padding: 10px;
+        width: 300px;
+        p {
+          margin-left: 10px;
+          display: inline;
+        }
+        input:hover {
+          cursor: pointer;
+        }
       }
-      input:hover {
-        cursor: pointer;
-      }
+    }
+    .btn {
+      width: 100%;
     }
   }
 }
