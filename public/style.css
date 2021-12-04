@@ -1,6 +1,24 @@
 .alerta--transition {
   transition: 0.3s ease; }
 
+.form {
+  display: flex;
+  flex-direction: column; }
+  .form .input {
+    padding: 7px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    outline: none; }
+  .form .error {
+    border: 1.5px solid #dc3545; }
+    .form .error:focus {
+      box-shadow: 0 0 2px 2px #dab3b7; }
+  .form .text-error {
+    margin: 0 0 5px 0;
+    color: #dc3545;
+    font-size: 12px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Nunito", sans-serif; }
   body .container {
     background-color: #fff;
     padding: 20px;

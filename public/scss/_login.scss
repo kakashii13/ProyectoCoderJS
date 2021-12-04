@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  .input {
+    padding: 7px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  .error {
+    border: 1.5px solid #dc3545;
+    &:focus {
+      box-shadow: 0 0 2px 2px #dab3b7;
+    }
+  }
+  .text-error {
+    margin: 0 0 5px 0;
+    color: #dc3545;
+    font-size: 12px;
+  }
+}

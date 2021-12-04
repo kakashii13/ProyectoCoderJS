@@ -1,4 +1,5 @@
 @import "_alert";
+@import "_login";
 
 body {
   margin: 0;
@@ -8,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
 
   .container {
     background-color: #fff;
