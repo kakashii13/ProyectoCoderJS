@@ -1,4 +1,4 @@
-let reserve = document.getElementById("btn");
+let reserve = document.getElementById("btn_reserve");
 
 // function selected hour id
 function getTime() {
@@ -74,3 +74,18 @@ reserve.addEventListener("click", () => {
     alerta.alertDangerTwo();
   }
 });
+
+// Local storage value
+const getLS = () => {
+  let user = localStorage.getItem("user");
+  return user;
+};
+
+// insertar como titulo userName
+
+const userName = () => {
+  let titleName = document.getElementById("title_user");
+  titleName.innerHTML = `Bienvenido ${getLS()}, <p>seleccione un horario</p>`;
+};
+
+userName();

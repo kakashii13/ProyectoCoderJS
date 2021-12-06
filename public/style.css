@@ -28,6 +28,8 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Nunito", sans-serif; }
+  body p {
+    margin: 0; }
   body .container {
     background-color: #fff;
     padding: 20px;

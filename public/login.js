@@ -25,13 +25,6 @@ function login() {
 
 login();
 
-function setLS() {
+const setLS = () => {
   localStorage.setItem("user", inputName.value);
-}
-
-function getLS() {
-  let user = localStorage.getItem("user");
-  console.log(user);
-}
-
-getLS();
+};
