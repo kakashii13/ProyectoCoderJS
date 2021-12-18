@@ -1,4 +1,4 @@
-let reserve = document.getElementById("btn_reserve");
+let reserve = $("#btn_reserve");
 
 // function selected hour id
 function getTime() {
@@ -47,7 +47,7 @@ class Alert {
 }
 
 // function reserved
-reserve.addEventListener("click", () => {
+reserve.click(() => {
   // alert
   const alert = document.querySelector("#alert");
   // get time id
@@ -84,8 +84,8 @@ const getLS = () => {
 // insertar como titulo userName
 
 const userName = () => {
-  let titleName = document.getElementById("title_user");
-  titleName.innerHTML = `Bienvenido ${getLS()}, <p>seleccione un horario</p>`;
+  let titleName = $("#title_user");
+  titleName.html(`Bienvenido ${getLS()}, <p>seleccione un horario</p>`);
 };
 
 userName();
